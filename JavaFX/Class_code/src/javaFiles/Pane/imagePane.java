@@ -1,4 +1,4 @@
-package javaFiles.imagePane;
+package javaFiles.Pane;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -18,12 +18,6 @@ public class imagePane extends Application{
 
     @Override
     public void start(Stage prStage) throws Exception {
-
-        prStage.setTitle("MyPane");
-        prStage.setHeight(800);
-        prStage.setWidth(1000);
-        prStage.setResizable(false);
-        prStage.getIcons().add(new Image("assets/images/MyIcon.png"));
 
         Image img = new Image("assets/images/image.png");
         ImageView iv = new ImageView(img);
@@ -46,18 +40,19 @@ public class imagePane extends Application{
         //hb1.setLayoutX(100);
         hb1.setStyle("-fx-background-color:BLUE");
 
+        //Scene
         Group gr = new Group(hb1);
-        
         Scene sc = new Scene(gr, 450, 100);
-        
+        prStage.setScene(sc);
         sc.setFill(Color.YELLOWGREEN);
         sc.setCursor(Cursor.OPEN_HAND);
 
-        prStage.setScene(sc);
-
+        //Stage
+        prStage.setTitle("MyPane");
+        prStage.setHeight(800);
+        prStage.setWidth(1000);
+        prStage.setResizable(false);
+        prStage.getIcons().add(new Image("assets/images/MyIcon.png"));
         prStage.show();
-        
-
     }
-    
 }
