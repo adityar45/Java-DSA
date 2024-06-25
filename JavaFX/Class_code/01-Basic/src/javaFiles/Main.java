@@ -13,5 +13,4 @@ public class Main {
         System.out.println("Hello, World!");
         Application.launch(BorderPane1.class, s);
     }
-
 }

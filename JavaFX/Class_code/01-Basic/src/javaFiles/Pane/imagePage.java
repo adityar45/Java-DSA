@@ -14,7 +14,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-public class imagePane extends Application{
+public class imagePage extends Application{
 
     @Override
     public void start(Stage prStage) throws Exception {
